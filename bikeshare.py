@@ -175,13 +175,13 @@ def user_stats(df):
     #Similarly, 'washington.csv' doesn't contain a 'Birth Year' column
     try:
         Earliest_Year = int(df['Birth Year'].min())
-        print("\n* Earliest Year:",Earliest_Year)
+        print("\n* Earliest Birth Year:",Earliest_Year)
 
         Most_Recent_Year = int(df['Birth Year'].max())
-        print("\n* Most Recent Year:",Most_Recent_Year)
+        print("\n* Most Recent Birth Year:",Most_Recent_Year)
 
         Most_Common_Year = int(df['Birth Year'].mode()[0])
-        print("\n* Most Common Year:",Most_Common_Year)
+        print("\n* Most Common Birth Year:",Most_Common_Year)
     except:
         print("\n*This file does not contain a 'Birth Year' column.")
 
