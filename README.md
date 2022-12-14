@@ -4,7 +4,7 @@
 14-DEC-2022
 
 ### Project Title
-US Bikeshare Data project 
+Data Exploration on U.S. Bikeshare Database 
 
 ### Description
 Describe what your project is about and what it does
