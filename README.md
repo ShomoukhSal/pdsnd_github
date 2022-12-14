@@ -47,5 +47,7 @@ After that, the user is asked if they want to view the raw data (the first 5 row
 Finally, the user is given the option to restart the program or not.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- https://numpy.org/devdocs/user/absolute_beginners.html#how-to-create-a-basic-array
+- https://pymotw.com/3/ 
+- Udacity: The instructors in Udacity & Data Analyst Nanodegree program. 
 
