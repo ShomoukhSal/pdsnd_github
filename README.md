@@ -6,8 +6,10 @@
 ### Project Title
 Data Exploration on U.S. Bikeshare Database 
 
-### Description
-Describe what your project is about and what it does
+### Project Overview
+I used this project as an opportunity to practice Python by exploring U.S. bikeshare system database for 3 U.S. cities: New York city, Chicago, and Washington.
+So, to effectively analyze the descriptive statistics, IÕve built code to import the data and answer key questions about the use of this system. 
+Additionally, I've created a script that accepts raw input to create an interactive user experience to provide this information in the terminal. 
 
 ### Files used
 Include the files used
