@@ -23,7 +23,7 @@ def get_filters():
     print()
     while chosen_city not in CITY_DATA.keys():
         print("Sorry, that's not in the opions")
-        chosen_city= input("Please,write the city you want to analyze the data from: Chicago, New York, washington").lower()
+        chosen_city= input("Please, write the city you want to analyze the data from: Chicago, New York, washington").lower()
         print()
     # To get user input for month (all, january, february, ... , june)
     MONTHS=['january', 'fabreuary', 'march','april', 'may', 'june']
@@ -220,7 +220,7 @@ def main():
             display_row_data(df)
             break
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\n Would you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
