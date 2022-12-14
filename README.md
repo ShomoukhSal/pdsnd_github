@@ -11,6 +11,11 @@ I used this project as an opportunity to practice Python by exploring U.S. bikes
 So, to effectively analyze the descriptive statistics, IÕve built code to import the data and answer key questions about the use of this system. 
 Additionally, I've created a script that accepts raw input to create an interactive user experience to provide this information in the terminal. 
 
+### Softwares used for this project: 
+- Anaconda, then I installed Python 3, NumPy, and pandas. 
+- Atom: a text editor 
+- A terminal application (Terminal on Mac) 
+
 ### Files used
 Include the files used
 
