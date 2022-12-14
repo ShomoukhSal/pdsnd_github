@@ -19,7 +19,7 @@ def get_filters():
     print()
 
     # To get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    chosen_city= input("Please,write the city you want to see its Data: Chicago, New York, washington: ").lower()
+    chosen_city= input("Please, write the city you want to see its Data: Chicago, New York, washington: ").lower()
     print()
     while chosen_city not in CITY_DATA.keys():
         print("Sorry, that's not in the opions")
@@ -128,7 +128,7 @@ def station_stats(df):
     # To display most frequent combination of start station and end station trip
     Group_By = df.groupby(['Start Station','End Station'])
     Popular_Combination = Group_By.size().sort_values(ascending=False).head(1)
-    print("\n* Most popular combination of Start Station and End Station trip:\n'", Popular_Combination)
+    print("\n* The most popular combination of Start Station and End Station trip:\n'", Popular_Combination)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -162,7 +162,7 @@ def user_stats(df):
     User_Type = df['User Type'].value_counts()
     print("\n* User Type Stats:\n", User_Type)
 
-    # To display counts of gender
+    # to display counts of gender
     #'washington.csv' doesn't contain a Gender column
     # therefore, this try clause is done to make sure that only df with 'Gender' column are displayed
     try:
