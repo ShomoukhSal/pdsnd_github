@@ -193,7 +193,7 @@ def display_row_data(df):
     '''
         Displays raw data on user request to compute the stats
     '''
-    print(df.head())
+    print(pd.set_option("display.max_columns",200))
     next_rows = 0
     while True:
         raw_data = input('\n Would you like to see next five row of raw data? Enter yes or no.\n')
