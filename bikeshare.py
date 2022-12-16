@@ -19,11 +19,11 @@ def get_filters():
     print()
 
     # To get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    chosen_city= input("Please,write the city you want to see its Data: Chicago, New York, washington: ").lower()
+    chosen_city= input("Please, write the city you want to see its Data: Chicago, New York, washington: ").lower()
     print()
     while chosen_city not in CITY_DATA.keys():
         print("Sorry, that's not in the opions")
-        chosen_city= input("Please,write the city you want to analyze the data from: Chicago, New York, washington").lower()
+        chosen_city= input("Please, write the city you want to analyze the data from: Chicago, New York, washington").lower()
         print()
     # To get user input for month (all, january, february, ... , june)
     MONTHS=['january', 'fabreuary', 'march','april', 'may', 'june']
@@ -128,7 +128,7 @@ def station_stats(df):
     # To display most frequent combination of start station and end station trip
     Group_By = df.groupby(['Start Station','End Station'])
     Popular_Combination = Group_By.size().sort_values(ascending=False).head(1)
-    print("\n* Most popular combination of Start Station and End Station trip:\n'", Popular_Combination)
+    print("\n* The most popular combination of Start Station and End Station trip:\n'", Popular_Combination)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -162,7 +162,7 @@ def user_stats(df):
     User_Type = df['User Type'].value_counts()
     print("\n* User Type Stats:\n", User_Type)
 
-    # To display counts of gender
+    # to display counts of gender
     #'washington.csv' doesn't contain a Gender column
     # therefore, this try clause is done to make sure that only df with 'Gender' column are displayed
     try:
@@ -175,13 +175,13 @@ def user_stats(df):
     #Similarly, 'washington.csv' doesn't contain a 'Birth Year' column
     try:
         Earliest_Year = int(df['Birth Year'].min())
-        print("\n* Earliest Year:",Earliest_Year)
+        print("\n* Earliest Birth Year:",Earliest_Year)
 
         Most_Recent_Year = int(df['Birth Year'].max())
-        print("\n* Most Recent Year:",Most_Recent_Year)
+        print("\n* Most Recent Birth Year:",Most_Recent_Year)
 
         Most_Common_Year = int(df['Birth Year'].mode()[0])
-        print("\n* Most Common Year:",Most_Common_Year)
+        print("\n* Most Common Birth Year:",Most_Common_Year)
     except:
         print("\n*This file does not contain a 'Birth Year' column.")
 
@@ -226,7 +226,7 @@ def main():
             display_row_data(df)
             break
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\n Would you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
