@@ -197,11 +197,11 @@ def display_row_data(df):
     next_rows = 0
     while True:
         raw_data = input('\n Would you like to see next five row of raw data? Enter yes or no.\n')
+        if raw_data.lower() == 'no':
+            break
         if raw_data.lower() != 'yes':
-            return
-        next_rows = next_rows+5
-        print(df.iloc[next_rows:next_rows+5])
-
+            print(df.iloc[next_rows:next_rows+5])
+            next_rows = next_rows+5
     print('-'*80)
 
 def main():
