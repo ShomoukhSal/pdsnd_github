@@ -185,6 +185,12 @@ def user_stats(df):
     except:
         print("\n*This file does not contain a 'Birth Year' column.")
 
+    # To display counts of bith year
+    try:
+        BirthYear_Stats = df['Birth Year'].value_counts()
+        print("\n* The count of every birth year:\n", BirthYear_Stats)
+    except:
+        print("\n*This file does not contain a 'Birth Year' column.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
